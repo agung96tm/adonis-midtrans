@@ -1,6 +1,6 @@
 {
   "name": "adonis-midtrans",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Midtrans Payment Gateway for Adonis Framework",
   "main": "instructions.js",
   "scripts": {
