@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "hell"
+    "url": "git+https://github.com/agung96tm/adonis-midtrans.git"
   },
   "keywords": [
     "adonisjs",
