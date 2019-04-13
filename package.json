@@ -1,0 +1,26 @@
+{
+  "name": "adonis-midtrans",
+  "version": "1.0.0",
+  "description": "Midtrans Payment Gateway for Adonis Framework",
+  "main": "instructions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hell"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis",
+    "adonis-package",
+    "midtrans",
+    "veritrans",
+    "api"
+  ],
+  "author": "agung96tm",
+  "license": "MIT",
+  "dependencies": {
+    "midtrans-client": "^1.0.3"
+  }
+}
