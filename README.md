@@ -1,7 +1,6 @@
 # Adonis Midtrans 💸
 
-This package is an **Payment Gateway** built on top of [midtrans-nodejs-client](https://github.com/Midtrans/midtrans-nodejs-client)  
-and inspired by [laravel-midtrans](https://github.com/marprin/laravel-midtrans)
+This package is an **Payment Gateway** built on top of [midtrans-nodejs-client](https://github.com/Midtrans/midtrans-nodejs-client) and inspired by [laravel-midtrans](https://github.com/marprin/laravel-midtrans)
 
 
 ## Getting Started

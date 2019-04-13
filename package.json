@@ -21,6 +21,10 @@
   "author": "agung96tm",
   "license": "MIT",
   "dependencies": {
+    "@adonisjs/generic-exceptions": "^3.0.1",
     "midtrans-client": "^1.0.3"
+  },
+  "devDependencies": {
+    "@adonisjs/fold": "^4.0.9"
   }
 }
