@@ -1,11 +1,8 @@
 {
   "name": "adonis-midtrans",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Midtrans Payment Gateway for Adonis Framework",
   "main": "instructions.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/agung96tm/adonis-midtrans.git"
@@ -21,8 +18,8 @@
   "author": "agung96tm",
   "license": "MIT",
   "dependencies": {
-    "@adonisjs/generic-exceptions": "^2.0.1",
-    "midtrans-client": "^1.0.3"
+    "@adonisjs/generic-exceptions": "^3.0.1",
+    "midtrans-client": "^1.2.2"
   },
   "devDependencies": {
     "@adonisjs/fold": "^4.0.9"
