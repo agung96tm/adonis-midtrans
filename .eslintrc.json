@@ -1,11 +1,6 @@
 {
-  "extends": [
-    "plugin:adonis/typescriptPackage",
-    "prettier"
-  ],
-  "plugins": [
-    "prettier"
-  ],
+  "extends": ["plugin:adonis/typescriptPackage", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": [
       "error",
