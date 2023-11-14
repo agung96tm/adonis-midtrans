@@ -1,5 +1,3 @@
-## Adonis Midtrans
-
 Open the `env.ts` file and paste the following code inside the `Env.rules` object.
 
 ```

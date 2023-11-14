@@ -1,6 +1,6 @@
 {
   "name": "@agung96tm/adonis-midtrans",
-  "version": "2.0.0",
+  "version": "1.0.1",
   "description": "Midtrans Payment Gateway for Adonis Framework",
   "main": "build/providers/MidtransProvider.js",
   "scripts": {
@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/agung96tm/adonis-midtrans/issues"
   },
-  "homepage": "https://github.com/agung96tm/adonis-midtrans#getting-started",
+  "homepage": "https://github.com/agung96tm/adonis-midtrans",
   "devDependencies": {
     "@adonisjs/core": "^5.1.6",
     "@adonisjs/mrm-preset": "^5.0.2",
