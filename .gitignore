@@ -1,2 +1,10 @@
 node_modules
+coverage
+.DS_STORE
 .idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.log
+build
+dist

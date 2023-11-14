@@ -16,7 +16,7 @@ Instruction: ([Click Here](https://github.com/agung96tm/adonis-midtrans/blob/mas
 
 ## Configure
 
-Configure token inside the `config/midtrans.js`
+Configure token inside the `config/news.js`
 ```js
 module.exports = {
   isProduction : Env.get('MIDTRANS_IS_PRODUCTION', false) === 'true',

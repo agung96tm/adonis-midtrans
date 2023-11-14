@@ -1,0 +1,10 @@
+import Env from '@ioc:Adonis/Core/Env'
+import { MidtransConfig } from '@ioc:Agung96tm/Midtrans'
+
+const midtransConfig: MidtransConfig = {
+    isProduction: Env.get('MIDTRANS_IS_PRODUCTION') as boolean,
+    serverKey: Env.get('MIDTRANS_SERVER_KEY') as string,
+    clientKey: Env.get('MIDTRANS_CLIENT_KEY') as string,
+}
+
+export default midtransConfig
