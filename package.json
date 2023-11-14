@@ -1,6 +1,6 @@
 {
   "name": "@agung96tm/adonis-midtrans",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Midtrans Payment Gateway for Adonis Framework",
   "main": "build/providers/MidtransProvider.js",
   "scripts": {
@@ -21,7 +21,9 @@
   },
   "keywords": [
     "adonisjs",
+    "adonisjs5",
     "adonis",
+    "adonis-v5",
     "typescript",
     "adonis-package",
     "midtrans",

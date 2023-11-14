@@ -1,6 +1,6 @@
 # Adonis Midtrans 💸
 
-This package is an **Payment Gateway** built on top of [midtrans-nodejs-client](https://github.com/Midtrans/midtrans-nodejs-client) and inspired by [laravel-midtrans](https://github.com/marprin/laravel-midtrans)
+This package is an **Payment Gateway** built on top of [midtrans-node](https://github.com/restuwahyu13/midtrans-node) and inspired by [laravel-midtrans](https://github.com/marprin/laravel-midtrans)
 
 [![typescript-image]][typescript-url] [![license-image]][license-url]
 
@@ -35,7 +35,7 @@ MIDTRANS_CLIENT_KEY=SB-Mid-client-xpTOkxxxxSsWTxxx
 import Midtrans from '@ioc:Agung96tm/Midtrans'
 
 Route.get('/', async () => {
-    const result = await Midtrans.createTransaction({
+    const response = await Midtrans.createTransaction({
         payment_type: 'bank_transfer',
         bank_transfer: { bank: 'bca' },
         transaction_details: {
@@ -75,7 +75,7 @@ Route.get('/', async () => {
         }
     })
     
-    return result
+    return response
     /** 
     {
       token: '1aa4d520-d6b2-4085-859c-5387f5bfdf11',
@@ -85,13 +85,8 @@ Route.get('/', async () => {
 })
 ```
 
-### Official
-
-- [Midtrans Docs](https://docs.midtrans.com)
-- [Midtrans Dashboard ](https://dashboard.midtrans.com/)
-- [SNAP documentation](http://snap-docs.midtrans.com)
-- [Core API documentation](http://api-docs.midtrans.com)
-
+## Contributors
+* Agung Yuliyanto: [Github](https://github.com/agung96tm), [LinkedIn](https://www.linkedin.com/in/agung96tm/)
 
 [typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
 [typescript-url]:  "typescript"
