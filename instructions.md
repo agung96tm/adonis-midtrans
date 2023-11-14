@@ -1,27 +1,13 @@
-## Registering provider
+## Adonis Midtrans: Config
+Open the `env.ts` file and paste the following code inside the `Env.rules` object.
 
-The provider is registered inside `start/app.js` file under `providers` array.
-
-```js
-const providers = [
-  'adonis-midtrans/providers/MidtransProvider'
-]
+```
+MIDTRANS_IS_PRODUCTION: Env.schema.boolean(),
+MIDTRANS_SERVER_KEY: Env.schema.string(),
+MIDTRANS_CLIENT_KEY: Env.schema.string(),
 ```
 
-
-## Setup Configure
-don't forget to set your config inside `config/midtrans.js` 
-
-```js
-module.exports = {
-  isProduction : Env.get('MIDTRANS_IS_PRODUCTION', false) === 'true',
-  serverKey : Env.get('MIDTRANS_SERVER_KEY', null),
-  clientKey : Env.get('MIDTRANS_CLIENT_KEY', null)
-}
-```
-
-or inside `.env`
-
+and add follow code to your `.env`
 ```
 MIDTRANS_IS_PRODUCTION=false
 MIDTRANS_SERVER_KEY=SB-Mid-server-xxXiKXXLpXXiKi6xxx

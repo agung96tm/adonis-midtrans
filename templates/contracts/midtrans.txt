@@ -1,0 +1,6 @@
+declare module '@ioc:Agung96tm/Midtrans' {
+    import { MidtransClient } from 'midtrans-node-client'
+
+    const midtrans: MidtransClient
+    export default midtrans
+}

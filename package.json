@@ -1,8 +1,9 @@
 {
-  "name": "adonis-midtrans",
-  "version": "1.1.0",
+  "name": "@agung96tm/adonis-midtrans",
+  "version": "2.0.0",
   "description": "Midtrans Payment Gateway for Adonis Framework",
-  "main": "instructions.js",
+  "main": "build/providers/MidtransProvider.js",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/agung96tm/adonis-midtrans.git"
@@ -17,11 +18,51 @@
   ],
   "author": "agung96tm",
   "license": "MIT",
-  "dependencies": {
-    "@adonisjs/generic-exceptions": "^3.0.1",
-    "midtrans-client": "^1.2.2"
+  "bugs": {
+    "url": "https://github.com/agung96tm/adonis-midtrans/issues"
   },
+  "homepage": "https://github.com/agung96tm/adonis-midtrans#getting-started",
   "devDependencies": {
-    "@adonisjs/fold": "^4.0.9"
+    "@adonisjs/core": "^5.1.6",
+    "@adonisjs/mrm-preset": "^5.0.2",
+    "@types/node": "^17.0.8",
+    "commitizen": "^4.1.2",
+    "copyfiles": "^2.3.0",
+    "cz-conventional-changelog": "^3.2.0",
+    "del-cli": "^4.0.1",
+    "doctoc": "^2.1.0",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-adonis": "^2.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.0.5",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "adonisjs": {
+    "instructionsMd": "./build/instructions.md",
+    "types": "@agung96tm/adonis-stripe",
+    "providers": [
+      "@agung96tm/adonis-stripe"
+    ],
+    "templates": {
+      "basePath": "./build/templates",
+      "config": [
+        {
+          "src": "config/midtrans.txt",
+          "dest": "midtrans"
+        }
+      ],
+      "contracts": [
+        {
+          "src": "contracts/midtrans.txt",
+          "dest": "midtrans"
+        }
+      ]
+    }
+  },
+  "types": "build/adonis-typings/index.d.ts",
+  "peerDependencies": {
+    "midtrans-node-client": "^0.0.6"
   }
 }
