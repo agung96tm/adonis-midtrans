@@ -11,7 +11,7 @@ export default class MidtransProvider {
         .use("Adonis/Core/Config")
         .get("midtrans");
 
-      return new MidtransClient.CoreApi({
+      return new MidtransClient.Snap({
         isProduction: isProduction,
         serverKey: serverKey,
         clientKey: clientKey,
