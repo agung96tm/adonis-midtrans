@@ -4,10 +4,10 @@ This package is an **Payment Gateway** built on top of [midtrans-node](https://g
 
 [![typescript-image]][typescript-url] [![license-image]][license-url]
 
-| Adonis Version | NPM |
-|----------|----------|
-| 5 | https://www.npmjs.com/package/@agung96tm/adonis-midtrans |
-| <5 | https://www.npmjs.com/package/adonis-midtrans |
+| Adonis Version | NPM                                                      |
+| -------------- | -------------------------------------------------------- |
+| 5              | https://www.npmjs.com/package/@agung96tm/adonis-midtrans |
+| <5             | https://www.npmjs.com/package/adonis-midtrans            |
 
 ## Getting Started
 
@@ -93,92 +93,123 @@ Route.get("/", async () => {
 });
 ```
 
-* status( transactionId: string )
+- status( transactionId: string )
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.status('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590')
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.status(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590"
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* statusb2b( transactionId: string )
+- statusb2b( transactionId: string )
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.statusb2b('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590')
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.statusb2b(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590"
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* approve( transactionId: string )
+- approve( transactionId: string )
+
 ```typescript
-   try {
-    const resp = await Midtrans.transaction.approve('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590')
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.approve(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590"
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* deny( transactionId: string )
+- deny( transactionId: string )
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.deny('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590')
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.deny(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590"
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* cancel( transactionId: string )
+- cancel( transactionId: string )
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.cancel('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590')
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.cancel(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590"
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* expire( transactionId: string )
+- expire( transactionId: string )
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.expire('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590')
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.expire(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590"
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* refund( transactionId: string, parameter?: object)
+- refund( transactionId: string, parameter?: object)
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.refund('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590', {
-       amount: 1000000, 
-       reason: 'Reason to refund payouts'
-     })
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.refund(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590",
+    {
+      amount: 1000000,
+      reason: "Reason to refund payouts",
+    }
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* refundDirect( transactionId: string, parameter?: object)
+- refundDirect( transactionId: string, parameter?: object)
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.refundDirect('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590', {
-       amount: 1000000, 
-       reason: 'Reason to direct payouts'
-     })
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.refundDirect(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590",
+    {
+      amount: 1000000,
+      reason: "Reason to direct payouts",
+    }
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
-* notification( notification: object )
+- notification( notification: object )
+
 ```typescript
-   try {
-     const resp = await Midtrans.transaction.status('be4f3e44-d6ee-4355-8c64-c1d1dc7f4590')
-     const notification = await Midtrans.transaction.notification(JSON.stringify(getResponse))
-   } catch (e) {
-     /** do something **/
-   }
+try {
+  const resp = await Midtrans.transaction.status(
+    "be4f3e44-d6ee-4355-8c64-c1d1dc7f4590"
+  );
+  const notification = await Midtrans.transaction.notification(
+    JSON.stringify(getResponse)
+  );
+} catch (e) {
+  /** do something **/
+}
 ```
 
 ## Contributors
