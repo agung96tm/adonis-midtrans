@@ -4,6 +4,11 @@ This package is an **Payment Gateway** built on top of [midtrans-node](https://g
 
 [![typescript-image]][typescript-url] [![license-image]][license-url]
 
+| Adonis Version | NPM |
+|----------|----------|
+| <5 | https://www.npmjs.com/package/adonis-midtrans |
+| 5 | https://www.npmjs.com/package/@agung96tm/adonis-midtrans |
+
 ## Getting Started
 
 Install the package using the `adonis` CLI.
